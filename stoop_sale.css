@@ -1,0 +1,324 @@
+/* Body and the whole document, basic styles*/
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #FFE3A9;
+}
+/*Header style*/
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+/*Nav style */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+/* Style for each button individually*/
+.nav-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FFBF78;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+/*Little animation when you hover on the nav buttons*/
+.nav-button:hover {
+    background-color: #e08e3b;
+}
+
+/*Section1 style*/
+.section1 {
+    margin-top: 60px;
+    background-image: url('images/stoop1');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Textbox on section 1 style*/
+.textbox {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 90%;
+    height: 40%;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Text on the textbox style*/
+.textbox h1 {
+    font-family: 'Style Script';
+    font-size: 8em;
+    text-align: center;
+    color: #FFBF78;
+    line-height: 1;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; 
+}
+/*Style of the timer*/
+#countdown-timer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Clock style */
+.clock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+/*Time unit style*/
+.time-unit {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #FFBF78;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    position: relative;
+}
+.time-unit span {
+    font-size: 0.5em;
+    position: absolute;
+    top: 110%;
+}
+/*Different values and text style*/
+#days, #hours, #minutes, #seconds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Music controllers style*/
+.music-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+/*Music Button style*/
+.music-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FFBF78;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*Little animation when you hover the music button*/
+.music-controls button:hover {
+    background-color: #e08e3b;
+}  
+/*Style of the second section*/
+.section2 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+}
+.section2 h1, .section2 h2, .section4 h1, .section6 h1
+{
+    font-weight: bolder;
+     color: #8B4513
+}
+/*Style of the third section*/
+.section3 {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0; /* Separation between sections */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('images/stoop2.png'); /* Add your background image URL here */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional: makes the background image fixed */
+}
+/*Style of the third and fifth section titles, since they should loo kthe same*/
+.section3 h2, .section5 h2{
+    font-family: 'Style Script', cursive;
+    font-size: 3em;
+    color: #FF6F61;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px #000;
+}
+/*Container style*/
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+/*slider style*/
+.slider {
+    margin-right: 10%;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+/*each slide style*/
+.slide {
+    flex: 0 0 33.33%;
+    padding: 10px;
+    text-align: center;
+}
+/*images style*/
+.slide img {
+    max-width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    background-color: #F5F5DC;
+    box-shadow: 
+        -1px -1px 0 #FF8C8C,  
+         1px -1px 0 #FF8C8C,
+        -1px  1px 0 #FF8C8C,
+         1px  1px 0 #FF8C8C; 
+}
+/*Switch slides buttons style*/
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /*for the mooth moving animation*/
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+/*switch left button*/
+button.prev {
+    left: 0;
+}
+/*switch right button*/
+button.next {
+    right: 0;
+}
+/*map style*/
+.map {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 10px solid transparent;
+    border-radius: 50px; /* Adjust for a flower-like border */
+    background-image: url('images/border.png'); /* Path to your floral border image */
+    background-size: cover;
+}
+.map iframe {
+    border-radius: 20px;
+}
+/*section 4 style*/
+.section4 {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+}
+/*share buttons style*/
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.share-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FFBF78;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*hover animation for the share buttons*/
+.share-buttons button:hover {
+    background-color: #e08e3b;
+}
+/*section 5 style*/
+.section5
+{
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('images/sharestoop.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*section 6 style*/
+.section6 {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+    background-color: #FFE3A9;
+}
+/*contact info container style*/
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+/*item sstyle*/
+.contact-item {
+    background: #FFF7E6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 300px;
+    width: 100%;
+}
+/*contact item text*/
+.contact-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #FF6F61;
+}
+.contact-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}

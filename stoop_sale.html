@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title for the webpage in the browser bar-->
+    <title>Stoop Salee!</title>
+    <!-- Include CSS-->
+    <link rel="stylesheet" href="stoop_sale.css">
+    <!--Icon for the wepbage in the browser bar-->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <!--Include Javascript-->
+    <script src="stoop_sale.js" defer></script>
+</head>
+
+<body>
+    <!--Creation of header, a navbar that stays on top of the page the whole time-->
+    <header class="header">
+        <nav class="nav">
+            <!--Each button redirects the user to a certain part of the webpage-->
+            <button class="nav-button" data-section="section1">Home</button>
+            <button class="nav-button" data-section="section2">Items</button>
+            <button class="nav-button" data-section="section3">Location</button>
+            <button class="nav-button" data-section="section4">Invite & Share</button>
+            <button class="nav-button" data-section="section6">Contact Us</button>
+        </nav>
+    </header>
+    <!--First section,the introductory home part of the webpage-->
+    <div class="section1">
+        <!--The textbox on the image-->
+        <div class="textbox">
+            <h1><i>Find Your Next Treasure at Our Stoop Sale!
+                <br>01.08 - 14:00</i></h1>
+        </div>
+        <!--Timer for the time left during the stoop starts created using javascript-->
+        <div id="countdown-timer">
+            <div class="clock">
+                <div class="time-unit" id="days"></div>
+                <div class="time-unit" id="hours"></div>
+                <div class="time-unit" id="minutes"></div>
+                <div class="time-unit" id="seconds"></div>
+            </div>
+        </div>
+    </div>
+    <!--Music to the website, with two buttons, play and stop music, scrolling with you-->
+    <div class="music-controls">
+        <!--Attaching the audio-->
+        <audio id="background-music" src="bensound-buddy.mp3" loop></audio>
+        <button id="play-music">Play Music</button>
+        <button id="stop-music">Stop Music</button>
+    </div>
+    <!--Second section, slider with some sample products that will be on the stoop sale-->
+    <div class="section2">
+        <h1>Remember! Your trash is someone else's treasure.</h1>
+        <br>
+        <!--The whole part of the slider or the slider-container-->
+        <div class="slider-container">
+            <!--Class only for the elements-->
+            <div class="slider">
+                <!--Each element has a class slide, because they all share similar css attributes-->
+                <div class="slide"><img src="images/dress.png" alt="Pink Dress"></div>
+                <div class="slide"><img src="images/summer_top.png" alt="Black Summer Top"></div>
+                <div class="slide"><img src="images/sandals.png" alt="Sandals"></div>
+                <div class="slide"><img src="images/jeans.png" alt="Blue Jeans"></div>
+                <div class="slide"><img src="images/fish_floppers.png" alt="Fish floppers"></div>
+                <div class="slide"><img src="images/sunglasses.png" alt="Sunglasses"></div>
+                <div class="slide"><img src="images/belt.png" alt="Black belt"></div>
+                <div class="slide"><img src="images/harry_potter.png" alt="Harry Potter book"></div>
+                <div class="slide"><img src="images/pika_pika.png" alt="Pikachu Toy"></div>
+            </div>
+            <!--Slider buttons-->
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+        <h2>... and many more suprises </h2>
+    </div>
+    <!--Third section, moveable map with the location of the stoop sale-->
+    <div class="section3">
+        <h2><b><i>Where can you find us?</i></b></h2>
+        <div class="map">
+            <!--Code, copied from google maps for the map, with inline css-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.7503919497162!2d-73.99905107877528!3d40.67946841563669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a585c181957%3A0x50e694b8c1ef75b2!2zMm5kIFBsICYgQ291cnQgU3QsIEJyb29rbHluLCBOWSAxMTIzMSwg0KHRitC10LTQuNC90LXQvdC4INGJ0LDRgtC4!5e0!3m2!1sbg!2sbg!4v1720774780570!5m2!1sbg!2sbg" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <br>
+    <!--Fourth section, encouraging users to invite their friends-->
+    <div class = "section4">
+        <h1><b><i>Don't hesitate, invite your friend and come to our stoop sale!</i></b></h1>
+        <img src = "images/Best_Teas.gif" alt = "Best Friends">
+        <br>
+        <br>
+    </div>
+    <!--Fifth section, with invite links for the stoop sale-->
+    <div class = "section5">
+        <h2>Share Our Stoop Sale!</h2>
+        <br>
+        <div class="share-buttons">
+            <!--Facebook button that redirects you to your facebook page and shaers the webite link-->
+            <button id="share-facebook">Share on Facebook</button>
+            <!--Link that copies the site URL-->
+            <button id="copy-url">Copy URL</button>
+            <!--Twitter(or X) button that redirects you to your twitter page and shares the website link-->
+            <button id="share-twitter">Share on Twitter</button>
+        </div>
+    </div>
+    <!--Sixth section with contact info-->
+    <div class="section6">
+    <h1>If you have any further questions, contact us!</h1>
+    <br>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>📧 Email</h3>
+                <!--Hyperlinked to the email, so that you email easily(random email)-->
+                <p><a href="mailto:info@stoopsale.com">info@stoopsale.com</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>📞 Phone</h3>
+                <!--Hyperlinked to the phone number, so that you ring easily(random number)-->
+                <p><a href="tel:+11234567890">(123) 456-7890</a></p>
+            </div>
+            <div class="contact-item">
+                <!--Hyperlinked to the address in maps, so that you find the address easily-->
+                <h3>🏠 Address</h3>
+                <p><a href="https://www.google.com/maps?q=2nd+Place+%26+Court+Street,+Brooklyn,+NY+11231" target="_blank">2nd Place & Court Street, Brooklyn, NY 11231, USA</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
