@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //Timer
     const countdownTimer = document.getElementById('countdown-timer');
-    const stoopSaleDate = new Date('2024-08-01T14:00:00').getTime();
+    const stoopSaleDate = new Date('2024-08-01T14:30:00').getTime();
 
     //Function to update the timer
     const updateCountdown = () => 
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const minutes = Math.floor((distance % (1000 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
         document.getElementById('days').innerHTML = `${days}<span>days</span>`;
-        document.getElementById('hours').innerHTML = `${hours}<span>hrs</span>`;
+        document.getElementById('hours').innerHTML = `${hours}<span>hours</span>`;
         document.getElementById('minutes').innerHTML = `${minutes}<span>mins</span>`;
         document.getElementById('seconds').innerHTML = `${seconds}<span>secs</span>`;
         if (distance < 0) 
